@@ -1,27 +1,34 @@
 import React from "react";
-// import kuwagata from "./assets/kuwagata.jpg";
-// import "./App.css";
+import Projects, { Project } from "./assets/projects";
 
 function App() {
-  const [project, setProject] = React.useState(null);
+  const [project, setProject] = React.useState<Project | null>(null);
 
   return (
     <>
       <header className="flex items-end px-28 py-8 bg-white h-40 text-black">
+        {/* TODO: japanese font */}
         <h1 className="text-6xl">こんにちは</h1>
         <h1 className="ml-8 text-5xl">i'm mochki</h1>
-        {!project && (
+        {project && (
           <>
             <h1 className="ml-8 text-2xl">and i made</h1>
-            <h1 className="ml-8 text-5xl">{project || "this project"}</h1>
+            <h1 className="ml-8 text-5xl">{project.name}</h1>
           </>
         )}
+        {/* TODO: not this */}
+        <button onClick={() => setProject(null)}>back</button>
+        {/* menu, about, logo */}
       </header>
-      <nav>
-        {/* <a href="https://github.com/mochki" target="_blank">
-          <img src={kuwagata} className="logo" alt="it's me!" />
-        </a> */}
-      </nav>
+      {project ? (
+        <section>{JSON.stringify(project.article)}</section>
+      ) : (
+        <nav className="grid">
+          {Projects.map((project) => (
+            <div onClick={() => setProject(project)}>{project.name}</div>
+          ))}
+        </nav>
+      )}
     </>
   );
 }
