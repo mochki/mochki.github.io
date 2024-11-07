@@ -1,3 +1,4 @@
-# Profile
+# Portfolio Site
 
-Will try to show off here
+Designed & coded by yours truly.
+Hated myself for making such bizarre designs

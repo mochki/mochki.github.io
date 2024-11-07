@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-black text-white">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>キ (ki)</title>
+    <meta name="Description" content="mochki developer portfolio" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" href="/favicon.ico" />
+    <!-- TODO: preload fonts -->
   </head>
-  <body>
-    <div id="root"></div>
+  <body class="relative h-dvh w-dvw overflow-hidden">
+    <!-- scale * 1+tan(2) to fill exposed corners from rotating -->
+    <div
+      id="root"
+      class="-rotate-2 scale-[1.038] origin-center h-dvh w-dvw overflow-hidden"
+    ></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
