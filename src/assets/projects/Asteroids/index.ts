@@ -5,16 +5,17 @@ import { Project } from "..";
 
 export default {
   name: "Asteroids",
-  sourceCode: "https://github.com/mochki/Asteroids",
+  // TODO: sourceCode: "https://github.com/mochki/...../Asteroids",
   article: [
     {
       type: "bigHeader",
-      content: "SPAAAAAAAAAACCCCEEE",
+      content: ["SPAAAAAAAAAACCCCEEE"],
     },
     {
-      type: "paragraph",
-      content:
+      type: "paragraphs",
+      content: [
         "We basically remade that 1979 hit completely, with higher resolution! It’s all written in C++ and uses OpenGL. It’s got:",
+      ],
     },
     {
       type: "list",
@@ -28,7 +29,12 @@ export default {
         "Random asteroids!",
       ],
     },
-    "At the time, this represented a lot of firsts for me: it was the first game I made, the first time I ran into a callback function, and first time doing anything with graphics. It was a ton of fun, I encourage everyone to download the source code and compile it and run it.",
+    {
+      type: "paragraphs",
+      content: [
+        "At the time, this represented a lot of firsts for me: it was the first game I made, the first time I ran into a callback function, and first time doing anything with graphics. It was a ton of fun, I encourage everyone to download the source code and compile it and run it.",
+      ],
+    },
   ],
   images: [
     {
@@ -45,4 +51,4 @@ export default {
       caption: "Game over when you have lost all your lives.",
     },
   ],
-} as Project;
+} satisfies Project;

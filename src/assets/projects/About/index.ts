@@ -5,7 +5,7 @@ export default {
   name: "About",
   article: [
     {
-      type: "paragraph",
+      type: "paragraphs",
       content: ["I really like lists. These are the lists I will cover:"],
     },
     {
@@ -19,14 +19,11 @@ export default {
       ],
     },
     {
-      type: "paragraph",
-      content:
+      type: "paragraphs",
+      content: [
         "Strong educational & hobbyist foundations in low-level computer engineering, reverse engineering, disassembling, and debugging. Professional experience building enterprise web applications in highly collaborative environments with designers, big data engineers, and product management.",
-    },
-    {
-      type: "paragraph",
-      content:
         "If you want to contact me, just fork a project and @mention me in a pull request. I will get back to you.",
+      ],
     },
     {
       type: "bigHeader",
@@ -113,4 +110,4 @@ export default {
     },
   ],
   hideFromMenu: true,
-} as Project;
+} satisfies Project;
