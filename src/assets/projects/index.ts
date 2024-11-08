@@ -4,6 +4,7 @@ import WNERL from "./W.NERL";
 import Tetris from "./Tetris";
 import Submarine from "./Submarine";
 import Sahara from "./Sahara";
+import Designer from "./Designer";
 import FS from "./FS";
 import Hippo from "./Hippo";
 import ML from "./ML";
@@ -14,13 +15,13 @@ import RSA from "./RSA";
 import Sudoku from "./Sudoku";
 import Manga from "./Manga";
 
-type ArticleContent = {
+export type ArticleContent = {
   type: "paragraphs" | "list" | "bigHeader" | "smallHeader" | "quote" | "link";
   content: string[];
   link?: string;
 };
 
-type Image = {
+export type Image = {
   src: string;
   caption: string;
 };
@@ -40,6 +41,7 @@ export default [
   Tetris,
   Submarine,
   Sahara,
+  Designer,
   FS,
   Hippo,
   ML,

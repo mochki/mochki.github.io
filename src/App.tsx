@@ -1,9 +1,10 @@
-import React from "react";
+import { useState } from "react";
 import Projects, { Project } from "./assets/projects";
-// 13 projects to display, 1 about page --> tailwind config
+// 14 projects to display, 1 about page --> tailwind config
+// import { Article } from "./components/Article";
 
 function App() {
-  const [project, setProject] = React.useState<Project | null>(null);
+  const [project, setProject] = useState<Project | null>(null);
 
   return (
     <>
@@ -26,17 +27,18 @@ function App() {
       </header>
       {/* <div class="absolute h-40">BLANK MASK</div> */}
       {project ? (
-        // ARTICLE
         <section>{JSON.stringify(project.article)}</section>
       ) : (
+        // <Article project={project} />
         // TODO: router & links
-        <nav className="grid flex-grow justify-items-center grid-rows-13">
+        <nav className="grid flex-grow justify-items-center grid-rows-14">
           {Projects.filter(({ name }) => name !== "About").map((project) => (
             <div
               className="flex w-full center items-center overflow-hidden"
               onClick={() => setProject(project)}
             >
-              <a className="text-9xl leading-[0.7] text-gray-600 hover:text-white hover:scale-110 w-full text-center cursor-pointer text-nowrap">
+              {/* gonna need to do media queries and set the text size. or something */}
+              <a className="text-[7rem] leading-[0.7] text-gray-600 hover:text-white hover:scale-110 w-full text-center cursor-pointer text-nowrap">
                 {project.name.toUpperCase()}
               </a>
             </div>
