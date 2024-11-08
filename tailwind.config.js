@@ -3,12 +3,17 @@ export default {
   content: ["./index.html", "./src/**/*.{ts,tsx}"],
   theme: {
     fontFamily: {
-      display: ["M-Bold", "Arial", "sans-serif"],
+      sans: ["C-Book", "Arial", "sans-serif"],
     },
     extend: {
       fontFamily: {
-        sans: ["C-Book", "Arial", "sans-serif"],
+        display: ["M-Bold", "Arial", "sans-serif"],
         light: ["M-Light", "Arial", "sans-serif"],
+        japanese: ["Darts", "sans-serif"],
+      },
+      gridTemplateRows: {
+        // Current project count
+        13: "repeat(13, minmax(0, 1fr))",
       },
     },
   },
