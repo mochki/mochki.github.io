@@ -11,10 +11,6 @@ export default {
         light: ["M-Light", "Arial", "sans-serif"],
         japanese: ["Darts", "sans-serif"],
       },
-      gridTemplateRows: {
-        // Current project count
-        14: "repeat(14, minmax(0, 1fr))",
-      },
     },
   },
   plugins: [],
