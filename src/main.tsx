@@ -1,13 +1,16 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider, Navigate } from "react-router-dom";
 import "./index.css";
 import App from "./App.tsx";
+import { pageParam, pageLoader } from "./pages/index.ts";
 
 const router = createHashRouter([
   {
-    path: "/",
+    path: `/:${pageParam}?`,
     element: <App />,
+    loader: pageLoader,
+    errorElement: <Navigate to="/" replace />,
   },
 ]);
 
