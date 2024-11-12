@@ -1,7 +1,7 @@
 import DesktopMobile from "./DesktopMobile.png";
 import Portfolio from "./Portfolio.png";
 import OldSite from "./OldSite.png";
-import { Page } from "../types";
+import { Page } from "../";
 
 export default {
   id: "designer",

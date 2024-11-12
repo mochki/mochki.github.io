@@ -1,5 +1,5 @@
 import kuwagata from "./kuwagata.jpg";
-import { Page } from "../types";
+import { Page } from "../";
 
 export default {
   id: "about",

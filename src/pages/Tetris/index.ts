@@ -3,7 +3,7 @@ import Design from "./Design.png";
 import Schematic from "./Schematic.png";
 import Traces from "./Traces.png";
 import Build from "./Build.png";
-import { Page } from "../types";
+import { Page } from "../";
 
 export default {
   id: "tetris",

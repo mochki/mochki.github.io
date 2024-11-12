@@ -1,7 +1,7 @@
 import InAction from "./InAction.jpg";
 import UnderwaterShot from "./UnderwaterShot.png";
 import Controls from "./Controls.png";
-import { Page } from "../types";
+import { Page } from "../";
 
 export default {
   id: "submarine",

@@ -4,7 +4,7 @@ import MostIncoming from "./MostIncoming.png";
 import Landing from "./Landing.png";
 import ActiveNode from "./ActiveNode.png";
 import InfoOverlay from "./InfoOverlay.png";
-import { Page } from "../types";
+import { Page } from "../";
 
 export default {
   id: "wikipedia",

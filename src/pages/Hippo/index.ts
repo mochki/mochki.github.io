@@ -1,6 +1,6 @@
 import HippoScreens from "./Hippo.png";
 import HippoAnimation from "./Hippo.gif";
-import { Page } from "../types";
+import { Page } from "../";
 
 export default {
   id: "hippo",

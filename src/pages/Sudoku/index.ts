@@ -1,7 +1,7 @@
 import GameStart from "./GameStart.png";
 import HelpEdit from "./HelpEdit.png";
 import Solve from "./Solve.png";
-import { Page } from "../types";
+import { Page } from "../";
 
 export default {
   id: "sudoku",

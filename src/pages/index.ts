@@ -1,4 +1,4 @@
-import { Page } from "./types";
+import { LoaderFunction } from "react-router-dom";
 
 import WNERL from "./W.NERL";
 import Tetris from "./Tetris";
@@ -15,7 +15,27 @@ import RSA from "./RSA";
 import Sudoku from "./Sudoku";
 import Manga from "./Manga";
 import About from "./About";
-import { LoaderFunction } from "react-router-dom";
+
+export type ArticleContent = {
+  type: "paragraphs" | "list" | "bigHeader" | "smallHeader" | "quote" | "link";
+  content: string[];
+  link?: string;
+};
+
+export type Image = {
+  src: string;
+  caption: string;
+};
+
+export type Page = {
+  id: string;
+  title: string;
+  sourceCode?: string;
+  homepage?: string;
+  article: ArticleContent[];
+  images?: Image[];
+  hideFromMenu?: boolean;
+};
 
 const pages = {
   [WNERL.id]: WNERL,
@@ -38,7 +58,8 @@ const pages = {
 type PageId = keyof typeof pages;
 
 export const pageParam = "pageId";
-export const pageIds = Object.keys(pages) as PageId[];
+export type PageState = (Page & { id: PageId }) | null;
+export type PageProps = { activePage: PageState };
 
 export const pageLoader: LoaderFunction<Page> = async ({ params }) => {
   const pageId = params[pageParam] as PageId | undefined;

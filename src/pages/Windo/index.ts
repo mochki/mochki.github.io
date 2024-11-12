@@ -2,7 +2,7 @@ import CreateEvent from "./CreateEvent.jpg";
 import AllScreens from "./AllScreens.jpg";
 import Messaging from "./Messaging.jpg";
 import EventInfo from "./EventInfo.jpg";
-import { Page } from "../types";
+import { Page } from "../";
 
 export default {
   id: "windo",
