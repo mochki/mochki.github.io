@@ -4,11 +4,12 @@ import MostIncoming from "./MostIncoming.png";
 import Landing from "./Landing.png";
 import ActiveNode from "./ActiveNode.png";
 import InfoOverlay from "./InfoOverlay.png";
-import { Page } from "../types";
+import { Page } from "../";
 
 export default {
   id: "wikipedia",
   title: "Wikipedia’s NERL",
+  type: "project",
   sourceCode: "https://github.com/mochki/WNERL",
   article: [
     {

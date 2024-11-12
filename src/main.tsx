@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { createHashRouter, RouterProvider, Navigate } from "react-router-dom";
 import "./index.css";
 import App from "./App.tsx";
-import { pageParam, pageLoader } from "./pages/index.ts";
+import { pageParam, pageLoader } from "./pages";
 
 const router = createHashRouter([
   {

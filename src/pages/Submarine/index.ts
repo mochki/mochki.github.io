@@ -1,11 +1,12 @@
 import InAction from "./InAction.jpg";
 import UnderwaterShot from "./UnderwaterShot.png";
 import Controls from "./Controls.png";
-import { Page } from "../types";
+import { Page } from "../";
 
 export default {
   id: "submarine",
   title: "Ethernet Tethered Submarine",
+  type: "project",
   // TODO: sourceCode: "https://github.com/mochki/.../Ethernet-Tethered-Submarine",
   article: [
     {

@@ -1,11 +1,12 @@
 import DesktopMobile from "./DesktopMobile.png";
 import Portfolio from "./Portfolio.png";
 import OldSite from "./OldSite.png";
-import { Page } from "../types";
+import { Page } from "../";
 
 export default {
   id: "designer",
   title: "Designer Portfolio",
+  type: "work",
   // TODO: homepage: "https://www.",
   article: [
     {

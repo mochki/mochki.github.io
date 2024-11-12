@@ -1,8 +1,9 @@
-import { Page } from "../types";
+import { Page } from "../";
 
 export default {
   id: "manga",
   title: "Manga Web Scraper",
+  type: "project",
   sourceCode: "https://github.com/mochki/kissmanga-scraper",
   article: [
     {

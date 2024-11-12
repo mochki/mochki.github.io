@@ -7,11 +7,12 @@ import MilHomeFAQs from "./MilHomeFAQs.png";
 import MilAboutReg from "./MilAboutReg.png";
 import SaharaHomeWork from "./SaharaHomeWork.png";
 import SaharaSidenavBlogs from "./SaharaSidenavBlogs.png";
-import { Page } from "../types";
+import { Page } from "../";
 
 export default {
   id: "sahara",
   title: "Sahara Dev",
+  type: "work",
   homepage: "http://www.saharadev.com/",
   article: [
     {

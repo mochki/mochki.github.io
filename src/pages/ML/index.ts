@@ -1,8 +1,9 @@
-import { Page } from "../types";
+import { Page } from "../";
 
 export default {
   id: "ml-algos",
   title: "Machine Learning Algorithms",
+  type: "project",
   // TODO: sourceCode: "https://github.com/mochki/..../CS450",
   article: [
     {

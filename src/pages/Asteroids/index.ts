@@ -1,11 +1,12 @@
 import GameStart from "./GameStart.png";
 import Level5 from "./Level5.png";
 import GameOver from "./GameOver.png";
-import { Page } from "../types";
+import { Page } from "../";
 
 export default {
   id: "asteroids",
   title: "Asteroids",
+  type: "project",
   // TODO: sourceCode: "https://github.com/mochki/...../Asteroids",
   article: [
     {

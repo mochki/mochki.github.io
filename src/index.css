@@ -5,21 +5,90 @@
 @layer base {
   @font-face {
     font-family: "C-Book";
-    src: url("./assets/fonts/C-Standard-Book.woff2") format("woff2");
+    src: url("./fonts/C-Standard-Book.woff2") format("woff2");
   }
 
   @font-face {
     font-family: "M-Bold";
-    src: url("./assets/fonts/M-Bold-Regular.woff2") format("woff2");
+    src: url("./fonts/M-Bold-Regular.woff2") format("woff2");
   }
 
   @font-face {
     font-family: "M-Light";
-    src: url("./assets/fonts/M-Light-Regular.woff2") format("woff2");
+    src: url("./fonts/M-Light-Regular.woff2") format("woff2");
   }
 
   @font-face {
     font-family: "Darts";
-    src: url("./assets/fonts/Darts.woff2") format("woff2");
+    src: url("./fonts/Darts.woff2") format("woff2");
   }
 }
+
+/* 
+// Transitions
+@mixin simple-ease-fast($property...) {
+  $val: ();
+  @each $p in $property {
+    $val: append($val, ($p 0.2s ease), comma)
+  }
+  transition: $val;
+}
+
+@mixin simple-ease-med($property...) {
+  $val: ();
+  @each $p in $property {
+    $val: append($val, ($p 0.3s ease), comma)
+  }
+  transition: $val;
+}
+
+
+:root {
+  // tan(2) = 0.034920769491748
+  --height-addition: calc(0.034920769491748 * 100vw / 2);
+  
+  --header-height-rect: 160px;
+  @include for-desktop { --header-height-rect: 170px; }
+  --header-width-addition: calc(0.034920769491748 * var(--header-height-rect));
+  --header-height-comp: calc(var(--header-height-rect) + var(--height-addition));
+  
+  --menu-height: calc(100vh - var(--header-height-rect));
+  --menu-width-addition: calc(0.034920769491748 * var(--menu-height));
+}
+
+body {
+  margin: 0;
+  background-color: $black;
+  color: $white;
+  @include __CB;
+  position: relative;
+  overflow: hidden;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.header-menu {
+  position: absolute;
+  overflow-x: hidden;
+  @include for-desktop { overflow-y: hidden; }
+  width: 100vw;
+  min-height: var(--header-height-comp);
+  max-height: 100vh;
+  z-index: 2;
+}
+
+.controls {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  z-index: 4;
+  @include for-mobile { display: none !important; }
+}
+
+.hide-controls {
+  display: none !important;
+}
+   */
