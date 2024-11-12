@@ -8,6 +8,7 @@ import { Page } from "../";
 export default {
   id: "tetris",
   title: "Tetris",
+  type: "project",
   sourceCode: "https://github.com/mochki/c-tetris",
   article: [
     {

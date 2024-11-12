@@ -6,6 +6,7 @@ import { Page } from "../";
 export default {
   id: "sudoku",
   title: "Sudoku",
+  type: "project",
   // TODO: sourceCode: "https://github.com/mochki/.../Sudoku-Solver",
   article: [
     {

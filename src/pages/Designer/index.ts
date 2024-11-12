@@ -6,6 +6,7 @@ import { Page } from "../";
 export default {
   id: "designer",
   title: "Designer Portfolio",
+  type: "work",
   // TODO: homepage: "https://www.",
   article: [
     {

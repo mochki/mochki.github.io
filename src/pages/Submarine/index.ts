@@ -6,6 +6,7 @@ import { Page } from "../";
 export default {
   id: "submarine",
   title: "Ethernet Tethered Submarine",
+  type: "project",
   // TODO: sourceCode: "https://github.com/mochki/.../Ethernet-Tethered-Submarine",
   article: [
     {

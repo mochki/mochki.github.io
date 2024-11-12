@@ -7,6 +7,7 @@ import { Page } from "../";
 export default {
   id: "windo",
   title: "Windo App",
+  type: "project",
   // TODO: sourceCode: "https://github.com/mochki/.../windo",
   article: [
     {

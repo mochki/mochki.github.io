@@ -5,6 +5,7 @@ import { Page } from "../";
 export default {
   id: "hippo",
   title: "Hippo",
+  type: "project",
   sourceCode: "https://github.com/mochki/Hippo",
   article: [
     {

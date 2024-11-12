@@ -9,6 +9,7 @@ import { Page } from "../";
 export default {
   id: "wikipedia",
   title: "Wikipedia’s NERL",
+  type: "project",
   sourceCode: "https://github.com/mochki/WNERL",
   article: [
     {

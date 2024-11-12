@@ -12,6 +12,7 @@ import { Page } from "../";
 export default {
   id: "sahara",
   title: "Sahara Dev",
+  type: "work",
   homepage: "http://www.saharadev.com/",
   article: [
     {

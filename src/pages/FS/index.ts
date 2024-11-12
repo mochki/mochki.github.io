@@ -3,6 +3,7 @@ import { Page } from "../";
 export default {
   id: "familysearch",
   title: "FamilySearch",
+  type: "work",
   homepage: "https://www.familysearch.org/",
   article: [
     {

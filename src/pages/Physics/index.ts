@@ -3,6 +3,7 @@ import { Page } from "../";
 export default {
   id: "physics",
   title: "Electricity & Magnetism Pages",
+  type: "project",
   // TODO: sourceCode: "https://github.com/mochki/..../PHY220",
   article: [
     {

@@ -27,9 +27,12 @@ export type Image = {
   caption: string;
 };
 
+type PageType = "project" | "work" | "about";
+
 export type Page = {
   id: string;
   title: string;
+  type: PageType;
   sourceCode?: string;
   homepage?: string;
   article: ArticleContent[];
@@ -65,3 +68,12 @@ export const pageLoader: LoaderFunction<Page> = async ({ params }) => {
   const pageId = params[pageParam] as PageId | undefined;
   return pageId ? pages[pageId] : null;
 };
+
+export const pageMetadata = Object.entries(pages).reduce(
+  (acc, [id, { title, type }]) => {
+    if (id === About.id) return acc;
+    acc.push({ id: id as PageId, title, type });
+    return acc;
+  },
+  [] as { id: PageId; title: string; type: PageType }[]
+);

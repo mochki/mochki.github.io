@@ -3,6 +3,7 @@ import { Page } from "../";
 export default {
   id: "rsa",
   title: "RSA in JS & E-LISP",
+  type: "project",
   sourceCode: "https://github.com/mochki/RSA.js",
   article: [
     {

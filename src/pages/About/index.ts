@@ -4,6 +4,7 @@ import { Page } from "../";
 export default {
   id: "about",
   title: "About",
+  type: "about",
   article: [
     {
       type: "paragraphs",
