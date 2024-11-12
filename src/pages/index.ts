@@ -69,11 +69,6 @@ export const pageLoader: LoaderFunction<Page> = async ({ params }) => {
   return pageId ? pages[pageId] : null;
 };
 
-export const pageMetadata = Object.entries(pages).reduce(
-  (acc, [id, { title, type }]) => {
-    if (id === About.id) return acc;
-    acc.push({ id: id as PageId, title, type });
-    return acc;
-  },
-  [] as { id: PageId; title: string; type: PageType }[]
+export const pageMetadata = Object.entries(pages).map(
+  ([, { id, title, type }]) => ({ id, title, type })
 );
