@@ -37,7 +37,6 @@ export type Page = {
   homepage?: string;
   article: ArticleContent[];
   images?: Image[];
-  hideFromMenu?: boolean;
 };
 
 const pages = {
@@ -69,6 +68,7 @@ export const pageLoader: LoaderFunction<Page> = async ({ params }) => {
   return pageId ? pages[pageId] : null;
 };
 
-export const pageMetadata = Object.entries(pages).map(
-  ([, { id, title, type }]) => ({ id, title, type })
-);
+export const pageMetadata = Object.entries(pages).map(([, { id, title }]) => ({
+  id,
+  title,
+}));

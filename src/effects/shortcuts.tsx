@@ -1,12 +1,11 @@
-import { useEffect, EffectCallback } from "react";
+import { useEffect } from "react";
 // import { ___ } from "react-router-dom";
 
-export const useShortcuts: EffectCallback = () => {
+export const useShortcuts: () => void = () => {
   useEffect(() => {
     // setup keyboard shortcuts
     return () => {
       // destroy keyboard shortcuts
     };
-  });
-  return;
+  }, []);
 };

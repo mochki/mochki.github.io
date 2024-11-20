@@ -104,6 +104,22 @@ export default {
         "Travel until I get so exhausted and don't want to travel anymore",
       ],
     },
+    {
+      type: "bigHeader",
+      content: ["Projects On The 'Get Around To It List'"],
+    },
+    {
+      type: "list",
+      content: [
+        // TODO: fill in
+        "Apple Wallet Manager",
+        "eBook & audiobook combined file format",
+        "Japanese live OCR & translation",
+        "Notes - speech parser; ",
+        "Recipe Ingredient Deduper & Shopping List Generator",
+        "interactive 'okay part of lying'",
+      ],
+    },
   ],
   images: [
     {
@@ -111,5 +127,4 @@ export default {
       caption: "Extra points if you know what this is from",
     },
   ],
-  hideFromMenu: true,
 } as const satisfies Page;
