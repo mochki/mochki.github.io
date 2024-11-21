@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "./logo.png";
+import logo from "../../logo/logo.png";
 import { Page, PageProps } from "../../pages";
 
 const HeaderSubtitle: React.FC<Pick<Page, "type">> = ({ type }) => (
@@ -18,9 +18,7 @@ export const Header: React.FC<PageProps> = ({ activePage }) => {
   return (
     <header className="flex items-end px-28 py-8 h-40 bg-white font-display text-black">
       <h1 className="text-6xl font-japanese">こんにちは</h1>
-      <h1 className="ml-8 text-5xl">
-        i'm mochki and im workin on this rn obv lul
-      </h1>
+      <h1 className="ml-8 text-5xl">i'm mochki</h1>
       {activePage && <HeaderSubtitle type={activePage.type} />}
       <img src={logo} alt="logo" className="w-20 h-20 ml-auto" />
       {activePage && <Link to="/">back</Link>}
