@@ -3,7 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{ts,tsx}"],
   theme: {
     fontFamily: {
-      sans: ["C-Book", "Arial", "sans-serif"],
+      sans: ["C-Book", "Arial", "sans-serif"], // default
     },
     extend: {
       fontFamily: {

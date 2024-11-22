@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <Header activePage={activePage} />
+      <Header />
       <Menu show={!activePage} />
       <Article activePage={activePage} />
     </>

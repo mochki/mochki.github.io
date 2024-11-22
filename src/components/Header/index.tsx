@@ -1,27 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../logo/logo.png";
-import { Page, PageProps } from "../../pages";
 
-const HeaderSubtitle: React.FC<Pick<Page, "type">> = ({ type }) => (
-  <div>{type}</div>
+export const Header: React.FC = () => (
+  <header className="flex text-5xl sm:text-6xl py-6 sm:py-8 pl-6 sm:pl-8 items-end bg-white text-black">
+    <h1 className="font-japanese">こんにちは</h1>
+    <h1 className="hidden md:block ml-8 font-display">i'm mochki</h1>
+    <Link to="/" className="my-auto ml-auto mr-6 w-12 md:w-14">
+      <img src={logo} alt="logo; back to home" />
+    </Link>
+  </header>
 );
-// activePage.id !== "about" && (
-//   <>
-//     <h1 className="ml-3 text-5xl">& {activePage.title}</h1>
-//     <h1 className="ml-8 text-2xl font-japanese">を作りました</h1>
-//   </>
-// )}
-
-export const Header: React.FC<PageProps> = ({ activePage }) => {
-  // const { type } = activePage;
-  return (
-    <header className="flex items-end px-28 py-8 h-40 bg-white font-display text-black">
-      <h1 className="text-6xl font-japanese">こんにちは</h1>
-      <h1 className="ml-8 text-5xl">i'm mochki</h1>
-      {activePage && <HeaderSubtitle type={activePage.type} />}
-      <img src={logo} alt="logo" className="w-20 h-20 ml-auto" />
-      {activePage && <Link to="/">back</Link>}
-    </header>
-  );
-};
