@@ -28,8 +28,7 @@ export default {
     },
     {
       src: HelpEdit,
-      caption:
-        "Usage of the help options and edit option, while trying to put in an invalid number.",
+      caption: "Usage of the help options and edit option, while trying to put in an invalid number.",
     },
     {
       src: Solve,

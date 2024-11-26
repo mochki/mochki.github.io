@@ -92,23 +92,19 @@ export default {
   images: [
     {
       src: FullProcessor,
-      caption:
-        "The complete schematics for a 4 bit processor with 2 registers and RAM and a PROM.",
+      caption: "The complete schematics for a 4 bit processor with 2 registers and RAM and a PROM.",
     },
     {
       src: Design,
-      caption:
-        "The 9 column design Tetris game, with the rotations and colors of each piece.",
+      caption: "The 9 column design Tetris game, with the rotations and colors of each piece.",
     },
     {
       src: Schematic,
-      caption:
-        "The schematic for the custom PCB that connected the microprocessor, screen, I/O and power.",
+      caption: "The schematic for the custom PCB that connected the microprocessor, screen, I/O and power.",
     },
     {
       src: Traces,
-      caption:
-        "The actual traces that were cut. The printer we used only allowed for two layers of traces.",
+      caption: "The actual traces that were cut. The printer we used only allowed for two layers of traces.",
     },
     {
       src: Build,

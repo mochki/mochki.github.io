@@ -27,9 +27,7 @@ export default {
     },
     {
       type: "quote",
-      content: [
-        "When first exploring a topic, people don’t know what they don’t know.",
-      ],
+      content: ["When first exploring a topic, people don’t know what they don’t know."],
     },
     {
       type: "bigHeader",
@@ -127,13 +125,11 @@ export default {
     },
     {
       src: InfoOverlay,
-      caption:
-        "Prototype overlay that would have a bunch of interesting stats.",
+      caption: "Prototype overlay that would have a bunch of interesting stats.",
     },
     {
       src: MostIncoming,
-      caption:
-        "These are the node with the most incoming edges. This stat greatly influences the centrality.",
+      caption: "These are the node with the most incoming edges. This stat greatly influences the centrality.",
     },
   ],
 } as const satisfies Page;

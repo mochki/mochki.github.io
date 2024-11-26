@@ -27,13 +27,11 @@ export default {
   images: [
     {
       src: DesktopMobile,
-      caption:
-        "A desktop and mobile screenshot of her current portfolio website’s homepage.",
+      caption: "A desktop and mobile screenshot of her current portfolio website’s homepage.",
     },
     {
       src: Portfolio,
-      caption:
-        "A desktop and mobile screenshot of her current portfolio website’s project page.",
+      caption: "A desktop and mobile screenshot of her current portfolio website’s project page.",
     },
     {
       src: OldSite,

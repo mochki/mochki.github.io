@@ -41,8 +41,7 @@ export default {
   images: [
     {
       src: GameStart,
-      caption:
-        "Screenshot of initial game beginning, you start with one life and asteroids are randomly generated.",
+      caption: "Screenshot of initial game beginning, you start with one life and asteroids are randomly generated.",
     },
     {
       src: Level5,

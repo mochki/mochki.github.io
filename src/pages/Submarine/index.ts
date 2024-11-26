@@ -111,18 +111,15 @@ export default {
   images: [
     {
       src: InAction,
-      caption:
-        "We apprently didn’t take very many action shots. So I took this still from a video.",
+      caption: "We apprently didn’t take very many action shots. So I took this still from a video.",
     },
     {
       src: UnderwaterShot,
-      caption:
-        "This was on my computer, recieving this video feed from the Pi in the submarine.",
+      caption: "This was on my computer, recieving this video feed from the Pi in the submarine.",
     },
     {
       src: Controls,
-      caption:
-        "Just another part of the web interface that explained hwo the controls worked.",
+      caption: "Just another part of the web interface that explained hwo the controls worked.",
     },
   ],
 } as const satisfies Page;
