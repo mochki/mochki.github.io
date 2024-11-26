@@ -3,26 +3,32 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Arrows } from "./Arrows";
 import { PageProps } from "../../pages";
 
+// const HeaderSubtitle: React.FC<Pick<Page, "type">> = ({ type }) => (
+//   <div className="font-light">{type}</div>
+// );
+// // activePage.id !== "about" && (
+// //   <React.Fragment key={}>
+// //     <h1 className="ml-3 text-5xl">& {activePage.title}</h1>
+// //     <h1 className="ml-8 text-2xl font-japanese">を作りました</h1>
+// //   </React.Fragment>
+// // )}
+
 export const Article: React.FC<PageProps> = ({ activePage }) => {
   if (!activePage) return null;
 
   const { sourceCode, homepage, article, images = [] } = activePage;
 
+  // gonna throw the subtitle in here
+
   return (
     <AnimatePresence>
-      <motion.section
-        key="article"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        className="absolute top-64 mx-40 grid grid-cols-2"
-      >
+      <motion.section animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="absolute top-64 mx-40 grid grid-cols-2">
         <section>
-          {images.map(({ src, caption }) => (
-            <>
+          {images.map(({ src, caption }, i) => (
+            <React.Fragment key={`image-${i}`}>
               <img src={src} alt={caption} />
               <div>{caption}</div>
-            </>
+            </React.Fragment>
           ))}
         </section>
         <div className="">
@@ -40,15 +46,15 @@ export const Article: React.FC<PageProps> = ({ activePage }) => {
             <div key={content[0]}>
               {type === "paragraphs" && (
                 <p>
-                  {content.map((paragraph) => (
-                    <>{paragraph}</>
+                  {content.map((paragraph, i) => (
+                    <React.Fragment key={`p-${i}`}>{paragraph}</React.Fragment>
                   ))}
                 </p>
               )}
               {type === "list" && (
                 <ul>
                   {content.map((item) => (
-                    <li>{item}</li>
+                    <li key={item}>{item}</li>
                   ))}
                 </ul>
               )}
@@ -56,8 +62,8 @@ export const Article: React.FC<PageProps> = ({ activePage }) => {
               {type === "smallHeader" && <h2>{content[0]}</h2>}
               {type === "quote" && (
                 <blockquote>
-                  {content.map((paragraph) => (
-                    <>{paragraph}</>
+                  {content.map((paragraph, i) => (
+                    <React.Fragment key={`q-${i}`}>{paragraph}</React.Fragment>
                   ))}
                 </blockquote>
               )}
