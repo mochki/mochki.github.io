@@ -60,8 +60,7 @@ const pages = {
 type PageId = keyof typeof pages;
 
 export const pageParam = "pageId";
-export type PageState = (Page & { id: PageId }) | null;
-export type PageProps = { activePage: PageState };
+export type ActivePage = Page & { id: PageId };
 
 export const pageLoader: LoaderFunction<Page> = async ({ params }) => {
   const pageId = params[pageParam] as PageId | undefined;

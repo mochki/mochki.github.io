@@ -1,21 +1,19 @@
+import { FC } from "react";
 import { useLoaderData } from "react-router-dom";
 import { useShortcuts } from "./effects/shortcuts";
 import { Header } from "./components/Header";
 import { Menu } from "./components/Menu";
 import { Article } from "./components/Article";
-import { PageState } from "./pages";
+import { ActivePage } from "./pages";
 
-function App() {
-  const activePage = useLoaderData() as PageState;
+export const App: FC = () => {
+  const activePage = useLoaderData() as ActivePage;
   useShortcuts();
 
   return (
     <>
       <Header />
-      <Menu show={!activePage} />
-      <Article activePage={activePage} />
+      {!activePage ? <Menu /> : <Article {...activePage} />}
     </>
   );
-}
-
-export default App;
+};
