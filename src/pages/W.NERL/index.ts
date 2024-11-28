@@ -31,7 +31,7 @@ export default {
     },
     {
       type: "bigHeader",
-      content: ["What’s this PageRank Algaerithum?"],
+      content: ["What’s this PageRank Algorithm?"],
     },
     {
       type: "paragraphs",
